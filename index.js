@@ -1,11 +1,13 @@
 'use strict';
 
 const express = require('express');
-const os = require('os');
+const cors = require('cors')
 
 const letters = require('./letters');
 
 const app = express();
+
+app.use(cors());
 
 const randPosInArray = length => Math.floor(Math.random() * length);
 
