@@ -12,6 +12,7 @@ const randPosInArray = length => Math.floor(Math.random() * length);
 app.get('/', (req, res) => {
   res.json({
     name: 'vkrbt',
+    message: 'to get random city go to /get-city/{letter} and substitute you letter(russian letters supports only)',
   })
 })
 
